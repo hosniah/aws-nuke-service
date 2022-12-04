@@ -32,7 +32,8 @@ account-blacklist:
 - 1234567890 #Account Ids to skip
 
 accounts:
-  0000x0000: #Account Ids to target. Will be updated by sed in AWS CodeBuild to target the current executing account
+  # Account Ids to target. Will be updated by sed in AWS CodeBuild to target the current executing account
+  369398972458:
     presets:
       - "aws-nuke-service"
       - "aws-organizations"
