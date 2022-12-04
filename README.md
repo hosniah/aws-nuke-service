@@ -39,7 +39,9 @@ https://sceptre.cloudreach.com/latest/docs/resolvers.html#custom-resolvers
 3. Push this code to a repository you can access with a GitHub personal access token   
 
 #### Note: 
-For aws-nuke to access and delete all services the IAM Role `AwsNukeRole` assumed by the AWS CodeBuild project  with IAM policy `AwsNukePolicy` is completely permissive. Please review these permissions in your environment to ensure suitable.
+1. For aws-nuke to access and delete all services the IAM Role `AwsNukeRole` assumed by the AWS CodeBuild project  with IAM policy `AwsNukePolicy` is completely permissive. Please review these permissions in your environment to ensure suitable.
+
+2. If your codebuild execution fails with the following error: 'Cloud formation package exit with error 255', make sure you have an alias for your AWS account that does not contain "prod" reference.
 
 ### Deployment
 
