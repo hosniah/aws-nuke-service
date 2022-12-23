@@ -36,7 +36,7 @@ account-blacklist:
 
 accounts:
   # Account Ids to target. Will be updated by sed in AWS CodeBuild to target the current executing account
-  369398972458:
+  137893875086:
     presets:
       - "aws-nuke-service"
       - "aws-organizations"
